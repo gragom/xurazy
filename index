@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人主页设计</title>
+		<style>
+			body{
+				background: url(../h5-1/img/bg/bg0018.png) no-repeat;
+			}
+			#head{
+				border: 10px solid lightblue;
+				border-radius: 8px;
+				height: 8em;min-width:15em ;
+				overflow: hidden;
+				padding-right: 1em;
+				margin: 0px 4px ;
+				/*position: relative;*/
+			}
+			img{
+				float:right;
+				width:7em;
+				margin-top: 0.7em;
+			}
+			div#nav{
+				z-index: 1;
+				/*position: fixed;
+				top: 9em;*/
+				width: 100%;
+				overflow: hidden;
+				height: 4em;
+			}
+			div#nav li{
+				list-style-type: none;
+				background-color: #FA0;
+				text-align: center ;
+				margin: 2px;
+				width: 6em;
+				float: left;
+			}
+			a:hover{
+				background-color: gray;
+			}
+			#content{
+				min-width: 25em;
+				border-top: dashed bisque;
+				position: relative;
+				margin:15px 10px;
+				border-image: url(../h5-1/img/border/b1.png) 27/23px/20PX round;
+			}
+			#content>#left{
+				position: absolute
+				left: 0px;
+				border: 1px solid #4169E1;
+				width: 26%;
+				box-shadow: 1px 2px 2px 1px #3C323A;
+				float: left;
+				
+			}
+			#content>#ad{
+				right: 0px;
+				marquee-direction: down;
+				marquee-style: ;
+				marquee-speed: 90;
+			}			
+			iframe{
+				width: calc(74% - 20px);
+				float: right;
+				overflow:overlay;
+				height: 50em;
+			}
+			#bottom>span{
+				font-size: 0.6em;
+				;
+			}
+			a{
+				text-decoration: none;
+			}
+</style>
+	</head>
+	<body>
+		<div id="head">
+			<img src="../h5-1/img/el/el0008.jpg"/>
+			<br />
+			<h3 align="center" style="text-overflow: ellipsis;">徐如光的个人主页</h3>
+			<p align="center">http://user.qzone.qq.com/609816931</p>
+		</div>
+		<div id="nav" class="main">
+			<ul>
+				<li><a href="" target="">主页</a></li>
+				<li><a href="" target="">留言版</a></li>
+				<li><a href="" target="">日志</a></li>
+				<li><a href="" target="">相册</a></li>
+				<li><a href="" target="">游戏</a></li>
+				<li><a href="" target="">分享和下载</a></li>
+				<li><a href="" target="">暂定</a></li>
+			</ul>
+		</div>
+			<!--<hr style="clear: both;width:100%;"/>-->
+		<div id="content" class="main dad">
+			<div id="left" class="float">
+				<h5 style="text-indent: 1.3em;">相关检索</h5>
+				<ul id="sort" style="list-style:sub-alpha;">
+					<li><a href="" target="iframe">文学类</a></li>
+					<li><a href="" target="iframe">医学类</a></li>
+					<li><a href="" target="iframe">理科类</a></li>
+					<li><a href="" target="iframe">工科类</a></li>
+					<li><a href="" target="iframe">软件类</a></li>
+					<li><a href="" target="iframe">游戏类</a></li>
+				</ul>
+			</div>
+			
+			<div id="middle" class="iframe">
+				<iframe name="widows" src="" width="" height=""></iframe>
+				<marquee id="ad" class="float">
+				这是一个很帅的人设计的主页
+			</marquee>
+			</div>
+		</div>
+		<div id="bottom" style="text-align: right;">
+			<span>本网址的内容仅供学习，请与24小后删除内容</span>
+			<a href="#">回顶部</a>
+		</div>
+	</body>
+</html>
